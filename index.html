@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
@@ -33,33 +35,54 @@
         <img src="imagenes/img_3.jpeg" class="imagenes">
         <p>La web tiene varios acertijos que nos pregunta un misterioso personaje que se supone que es el villano de la película, pero sus preguntas son bastante complejas y resolverlas no es tan fácil como parece, y si fallas te intenta poner nervioso, hasta que decide darte una nueva oportunidad y plantea nuevas preguntas.</p>
         <h3 class="encabezadoletradistinta">Reparto de la película</h3>
-    </div>
-    <table class="reparto">
-        <tr>
-            <th>Fotografía</th>
-            <th>Nombre del Actor</th>
-            <th>Papel en la Película</th>
-        </tr>
-        <tr>
-            <td><img src="imagenes/robert_pattinson.jpg" alt="Robert Pattinson" class="foto-actor"></td>
-            <td>Robert Pattinson</td>
-            <td>Bruce Wayne / Batman</td>
-        </tr>
-        <tr>
-            <td><img src="imagenes/zoe_kravitz.jpg" alt="Zoë Kravitz" class="foto-actor"></td>
-            <td>Zoë Kravitz</td>
-            <td>Selina Kyle / Catwoman</td>
-        </tr>
-        <tr>
-            <td><img src="imagenes/paul_dano.jpg" alt="Paul Dano" class="foto-actor"></td>
-            <td>Paul Dano</td>
-            <td>Edward Nashton / Acertijo</td>
-        </tr>
-        <tr>
-            <td><img src="imagenes/jeffrey_wright.jpg" alt="Jeffrey Wright" class="foto-actor"></td>
-            <td>Jeffrey Wright</td>
-            <td>James Gordon</td>
-        </tr>
-    </table>
+        <table class="reparto">
+            <tr>
+                <th>Fotografía</th>
+                <th>Nombre del Actor</th>
+                <th>Papel en la Película</th>
+            </tr>
+            <tr>
+                <td><img src="imagenes/robert_pattinson.jpg" alt="Robert Pattinson" class="foto-actor"></td>
+                <td>Robert Pattinson</td>
+                <td>Bruce Wayne / Batman</td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/zoe_kravitz.jpg" alt="Zoë Kravitz" class="foto-actor"></td>
+                <td>Zoë Kravitz</td>
+                <td>Selina Kyle / Catwoman</td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/paul_dano.jpg" alt="Paul Dano" class="foto-actor"></td>
+                <td>Paul Dano</td>
+                <td>Edward Nashton / Acertijo</td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/jeffrey_wright.jpg" alt="Jeffrey Wright" class="foto-actor"></td>
+                <td>Jeffrey Wright</td>
+                <td>James Gordon</td>
+            </tr>
+        </table>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://www.imdb.com/es-es/title/tt1877830/?ref_=mv_close"><img class="d-block w-100" src="./imagenes/carrusel3.webp" alt="Batman"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.imdb.com/es-es/title/tt1877830/?ref_=mv_close"><img class="d-block w-100" src="./imagenes/carrusel2.jpg" alt="Batman"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.imdb.com/es-es/title/tt1877830/?ref_=mv_close"><img class="d-block w-100" src="./imagenes/carrusel1.webp" alt="Batman"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          </div>
 </body>
 </html>
