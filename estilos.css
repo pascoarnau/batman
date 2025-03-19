@@ -1,9 +1,3 @@
-.fotocabecera {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 body, html {
     margin: 0;
     padding: 0;
@@ -11,8 +5,81 @@ body, html {
     height: 100%;
 }
 
-body {
+.textocabecera {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; /* Ajusta el ancho según sea necesario */
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
+
+.fotodelacabecera {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url(imagenes/header_background.jpeg);
+    background-position: center; /* La imagen se coloca en el centro */
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    font-size: 3em;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido al inicio (izquierda) */
+    justify-content: flex-start; /* Alinea el contenido al inicio (arriba) */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-size: 1.25em;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.videotrailer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    padding-left: 0; /* Elimina el padding izquierdo */
+    padding-right: 0; /* Elimina el padding derecho */
+    margin-bottom: 20px; /* Añade un pequeño margen inferior */
+}
+
+
+.resaltado {
+    color: red; /* Color rojo para el texto resaltado */
+}
+
+.encabezadoletradistinta {
+    font-family: 'Special Elite', cursive; /* Aplica la fuente Special Elite */
+}
+.imagenes {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    max-width: 800px; /* Ancho máximo de la imagen */
+    margin: 10px auto; /* Centra la imagen y añade un margen superior e inferior */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+.reparto {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.reparto th, .reparto td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.reparto th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.foto-actor {
+    width: 100px;
+    height: auto;
 }
